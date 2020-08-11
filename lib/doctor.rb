@@ -22,7 +22,11 @@ class Doctor
 end
 
 def patients
-  
+      g = []
+  appointments.select do |app|
+    g.push(app.doctor)
+  end
+  g
 end
   
 end
