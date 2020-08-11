@@ -24,7 +24,7 @@ end
   def doctors
           g = []
   appointments.select do |app|
-    g.push(app.doctor)
+    g.push(app.patient)
   end
   g
   end
