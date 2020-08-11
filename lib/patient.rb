@@ -17,12 +17,16 @@ class Patient
   
   def appointments
   Appointment.all.select do |app|
-    app.doctor == self
+    app.patient == self
   end
 end
   
   def doctors
-    
+          g = []
+  appointments.select do |app|
+    g.push(app.doctor)
+  end
+  g
   end
   
   
