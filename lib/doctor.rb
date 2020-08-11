@@ -22,7 +22,7 @@ class Doctor
     app.doctor == self
     
   end
-  binding.pry 
+ # binding.pry 
 end
 
 def patients
