@@ -24,9 +24,11 @@ class Artist
 end
   
    def genres
+     g = []
   songs.select do |song|
-    song.genre
+    g.push(song.genre)
   end
+  g
 end
   
 end
