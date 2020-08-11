@@ -10,7 +10,7 @@ class Appointment
     @date = date
     @patient = patient
     @doctor = doctor
-    @all.push(self)
+    @@all.push(self)
   end
   
 end
