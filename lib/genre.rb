@@ -11,11 +11,14 @@ class Genre
     @@all.push(self)
   end
     
-     def artists
-  Artist.all.select do |artist|
-    artist.genre == self
+      def artists
+     g = []
+  songs.select do |song|
+    g.push(song.artist)
   end
+  g
 end
+  
     
     def songs 
       Song.all.select do |song|
