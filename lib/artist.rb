@@ -26,6 +26,7 @@ end
    def genres
   songs.select do |song|
     song.genre
+  end
 end
   
 end
