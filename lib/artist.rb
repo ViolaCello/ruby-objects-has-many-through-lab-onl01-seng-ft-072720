@@ -24,10 +24,12 @@ class Artist
 end
   
    def genres
+     a = []
   Songs.all.select do |artist|
     song.artist == self
-    
-  end
+    a.push(song.genre)
+    end
+    a 
 end
   
 end
